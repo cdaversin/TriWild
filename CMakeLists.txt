@@ -74,7 +74,8 @@ option(LIBIGL_WITH_OPENGL_GLFW_IMGUI "Use ImGui"          OFF)
 option(LIBIGL_WITH_VIEWER            "Use OpenGL viewer"  OFF)
 
 find_package(LIBIGL REQUIRED QUIET)
-find_package(GMPTriWild)
+#find_package(GMPTriWild)
+find_package(GMP)
 
 IF(NOT ${GMP_FOUND})
         MESSAGE(FATAL_ERROR "Cannot find GMP")
